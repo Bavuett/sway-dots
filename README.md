@@ -1,4 +1,4 @@
-# hypr-dots 🌸
+# sway-dots 🌸
 
 A pastel-themed Sway rice for Fedora, inspired by [ViegPhunt/Dotfiles](https://github.com/ViegPhunt/Dotfiles).
 
@@ -71,8 +71,8 @@ JetBrainsMono Nerd Font: download from https://www.nerdfonts.com/font-downloads
 ### 2. Clone and deploy
 
 ```bash
-git clone https://github.com/Bavuett/hypr-dots.git
-cd hypr-dots
+git clone https://github.com/Bavuett/sway-dots.git
+cd sway-dots
 ./install_dotfiles.sh
 ```
 
