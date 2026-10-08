@@ -1,0 +1,53 @@
+# ███████╗██╗    ██╗ █████╗ ██╗   ██╗
+# ██╔════╝██║    ██║██╔══██╗╚██╗ ██╔╝
+# ███████╗██║ █╗ ██║███████║ ╚████╔╝
+# ╚════██║██║███╗██║██╔══██║  ╚██╔╝
+# ███████║╚███╔███╔╝██║  ██║   ██║
+# ╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝
+# -----------------------------------
+# Order matters: variables in programs.conf are used by the files below.
+# Environment variables live in ~/.config/environment.d/90-wayland.conf
+# (sway has no `env` keyword).
+
+
+
+################
+### MONITORS ###
+################
+include ~/.config/sway/conf/monitors.conf
+
+
+###################
+### MY PROGRAMS ###
+###################
+include ~/.config/sway/conf/programs.conf
+
+
+#####################
+### LOOK AND FEEL ###
+#####################
+include ~/.config/sway/conf/appearance.conf
+
+
+#############
+### INPUT ###
+#############
+include ~/.config/sway/conf/input.conf
+
+
+###################
+### KEYBINDINGS ###
+###################
+include ~/.config/sway/conf/keybinding.conf
+
+
+####################
+### WINDOWS RULE ###
+####################
+include ~/.config/sway/conf/windowrule.conf
+
+
+#################
+### AUTOSTART ###
+#################
+include ~/.config/sway/conf/autostart.conf

@@ -1,21 +1,19 @@
 # ============================================================
-# Hypr-dots — Dipendenze (Fedora / DNF)
+# Sway dots — Dipendenze (Fedora / DNF)
 # ============================================================
 #
-# 1. Abilita il repo COPR per pacchetti extra:
+# Tutti i pacchetti sono nei repo ufficiali Fedora (nessun COPR).
 #
-#   sudo dnf copr enable solopasha/hyprland -y
-#
-# 2. Installa tutti i pacchetti:
+# 1. Installa tutti i pacchetti:
 #
 #   sudo dnf install -y $(grep -v '^#' dependencies.txt | grep -v '^$' | tr '\n' ' ')
 #
-# 3. Installa Starship (non disponibile su DNF):
+# 2. Installa Starship (non disponibile su DNF):
 #
 #   curl -fsSLo /tmp/install-starship.sh https://starship.rs/install.sh
 #   sh /tmp/install-starship.sh
 #
-# 4. (Opzionale) Google Chrome:
+# 3. (Opzionale) Google Chrome:
 #
 #   sudo dnf install -y fedora-chromium-config
 #   sudo dnf install -y google-chrome-stable
@@ -23,26 +21,26 @@
 # ============================================================
 
 # --- Wayland / Compositor ---
-hyprland
-hyprlock
-hyprpicker
-xdg-desktop-portal-hyprland
+sway
+swaylock
+swaybg
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
 xdg-user-dirs
 
 # --- Bar, launcher, notifiche, logout ---
 waybar
 wofi
-swaync
+SwayNotificationCenter
 wlogout
+libnotify
 
 # --- Terminale ---
 kitty
 
-# --- Wallpaper ---
-swww
-
 # --- Screenshot ---
-hyprshot
+grim
+slurp
 
 # --- File manager ---
 nautilus
@@ -58,6 +56,9 @@ nm-connection-editor
 
 # --- Bluetooth ---
 blueman
+
+# --- Script (kill finestra, Super+Shift+Q) ---
+jq
 
 # --- Clipboard ---
 cliphist

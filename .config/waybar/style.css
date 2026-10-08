@@ -48,7 +48,7 @@ tooltip label {
     background-color: alpha(@select, 0.6);
 }
 
-#workspaces button.active {
+#workspaces button.focused {
     color: @background;
     font-weight: 800;
     background-color: @hc-blue;
@@ -86,7 +86,7 @@ tooltip label {
     font-weight: 600;
 }
 
-#submap {
+#mode {
     background: alpha(@red, 0.85);
     color: @background;
     font-weight: 800;
