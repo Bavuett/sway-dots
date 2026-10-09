@@ -1,45 +1,45 @@
-# Starship prompt - pastel theme
-# Colors: #f5b8c6 (pink/primary), #fffaa0 (yellow/secondary), #aec6cf (blue/tertiary)
+# Starship prompt - Pastel Pink Flower (dark rose)
+# Colors: #f697aa (pink), #f6c49a (peach), #a8d8e5 (blue), #b8b8f0 (lavender), #a8e5c6 (mint)
 
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[╭─](bold #504055)$os$username$hostname$directory$git_branch$git_status$python$nodejs$rust$golang$java$package
-[╰─](bold #504055)$character"""
+[╭─](bold #c69aa3)$os$username$hostname$directory$git_branch$git_status$python$nodejs$rust$golang$java$package
+[╰─](bold #c69aa3)$character"""
 
 add_newline = true
 
 [character]
-success_symbol = "[❯](bold #8f2d3a)"
-error_symbol = "[❯](bold #bf3d4f)"
-vimcmd_symbol = "[❮](bold #3d2f47)"
+success_symbol = "[❯](bold #ffa3b5)"
+error_symbol = "[✗](bold #ffd166)"
+vimcmd_symbol = "[❮](bold #faf1ef)"
 
 [os]
 disabled = false
-style = "bold #244b58"
+style = "bold #a8d8e5"
 
 [os.symbols]
 Fedora = " "
 Linux = " "
 
 [username]
-style_user = "bold #7a2e44"
-style_root = "bold #bf3d4f"
+style_user = "bold #f697aa"
+style_root = "bold #ffb3c1"
 format = "[$user]($style) "
 show_always = false
 
 [hostname]
-style = "bold #7a5020"
+style = "bold #f6c49a"
 format = "[@$hostname]($style) "
 ssh_only = true
 
 [directory]
-style = "bold #244b58"
+style = "bold #a8d8e5"
 format = "[$path]($style)[$read_only]($read_only_style) "
 truncation_length = 4
 truncation_symbol = "…/"
 read_only = " 󰌾"
-read_only_style = "#bf3d4f"
+read_only_style = "#ffb3c1"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -50,11 +50,11 @@ read_only_style = "#bf3d4f"
 
 [git_branch]
 symbol = " "
-style = "bold #4f3674"
+style = "bold #b8b8f0"
 format = "on [$symbol$branch]($style) "
 
 [git_status]
-style = "bold #7a5020"
+style = "bold #f6c49a"
 format = '([$all_status$ahead_behind]($style) )'
 conflicted = "⚡"
 ahead = "⇡${count}"
@@ -69,32 +69,32 @@ deleted = "✘"
 
 [python]
 symbol = " "
-style = "bold #7a5020"
+style = "bold #f6c49a"
 format = "[$symbol($virtualenv )]($style)"
 
 [nodejs]
 symbol = " "
-style = "bold #4a9b6f"
+style = "bold #a8e5c6"
 format = "[$symbol($version )]($style)"
 
 [rust]
 symbol = " "
-style = "bold #8c4c1a"
+style = "bold #f6af97"
 format = "[$symbol($version )]($style)"
 
 [golang]
 symbol = " "
-style = "bold #244b58"
+style = "bold #a8d8e5"
 format = "[$symbol($version )]($style)"
 
 [java]
 symbol = " "
-style = "bold #8f2d3a"
+style = "bold #ffa3b5"
 format = "[$symbol($version )]($style)"
 
 [package]
 symbol = "󰏗 "
-style = "bold #4f3674"
+style = "bold #b8b8f0"
 format = "[$symbol$version]($style) "
 disabled = false
 
@@ -103,4 +103,4 @@ disabled = true
 
 [cmd_duration]
 min_time = 2000
-format = "took [$duration](bold #fffaa0) "
+format = "took [$duration](bold #f7d6a0) "

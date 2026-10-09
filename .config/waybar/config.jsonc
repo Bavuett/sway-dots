@@ -27,7 +27,11 @@
     },
     "sway/window": {
         "format": "{}",
-        "max-length": 50
+        "max-length": 50,
+        // Mostrato quando su questo schermo nessuna finestra ha il focus
+        "rewrite": {
+            "^$": "󰖲  Nessuna finestra attiva"
+        }
     },
     "sway/mode": {
         "format": "✌️ {} mode",

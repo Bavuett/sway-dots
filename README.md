@@ -1,21 +1,23 @@
 # sway-dots 🌸
 
-A pastel-themed Sway rice for Fedora, inspired by [ViegPhunt/Dotfiles](https://github.com/ViegPhunt/Dotfiles).
+A dark-rose pastel Sway rice for Fedora, inspired by [ViegPhunt/Dotfiles](https://github.com/ViegPhunt/Dotfiles).
 
 ## 🎨 Color Palette
 
 | Role       | Color     | Preview |
 |------------|-----------|---------|
-| Primary    | `#f5b8c6` | 🌸 Pastel Pink |
-| Secondary  | `#fffaa0` | 🌼 Pastel Yellow |
-| Tertiary   | `#aec6cf` | 🩵 Pastel Blue |
-| Background | `#fff7f3` | 🌤️ Soft Spring Cream |
-| Foreground | `#6b5b73` | 🌷 Dusty Lavender |
+| Primary    | `#f697aa` | 🌸 Rose Pink |
+| Secondary  | `#f6af97` | 🍑 Peach |
+| Tertiary   | `#a8e5c6` | 🌿 Mint |
+| Background | `#6e3a47` | 🍷 Antique Rose |
+| Foreground | `#faf1ef` | 🤍 Cream |
+
+Dark rose palette inspired by the Zed theme *Pastel Pink Flower* and the gaura-flower wallpaper. Sway has no blur, so panels are near-opaque to keep text readable.
 
 ## 📦 Included Configurations
 
 - **Window Manager**: `sway` with pastel borders and gaps
-- **Terminal**: `kitty` with pastel color scheme
+- **Terminal**: `kitty` with dark rose color scheme
 - **Shell**: `bash` with Starship prompt
 - **Prompt**: `starship` (pastel theme)
 - **Status Bar**: `waybar` with pastel styling
@@ -35,7 +37,7 @@ A pastel-themed Sway rice for Fedora, inspired by [ViegPhunt/Dotfiles](https://g
 .
 ├── .config/
 │   ├── colors/         # Shared pastel color scheme (CSS variables)
-│   ├── environment.d/  # Session env vars (Wayland/Qt/Electron)
+│   ├── environment.d/  # Session env vars (Wayland/Qt/Electron, SSH agent)
 │   ├── sway/           # Sway config
 │   │   ├── conf/       # Modular sway configs
 │   │   └── scripts/    # Screenshot + cheat sheet helpers

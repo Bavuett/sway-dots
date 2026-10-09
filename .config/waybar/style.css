@@ -5,15 +5,15 @@
     font-size: 13px;
     font-weight: 500;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 0;
     min-height: 0;
 }
 
 window,
 tooltip {
-    background: alpha(@background, 0.45);
+    background: alpha(@background, 0.95);
     border: 2px solid @vibrant-border;
-    border-radius: 6px;
+    border-radius: 0;
 }
 
 tooltip label {
@@ -28,43 +28,44 @@ tooltip label {
 
 /* Workspaces */
 #workspaces {
-    background: alpha(@background, 0.30);
+    background: alpha(@background, 0.90);
     border: 2px solid @vibrant-border;
-    border-radius: 6px;
+    border-radius: 0;
     padding: 0 4px;
 }
 
 #workspaces button {
-    color: @hc-lavender;
+    color: @foreground-muted;
     border: none;
     padding: 0 8px;
     margin: 4px 2px;
-    border-radius: 4px;
+    border-radius: 0;
     transition: background-color 0.1s ease, color 0.1s ease;
 }
 
 #workspaces button:hover {
-    color: @pink;
+    color: @foreground;
     background-color: alpha(@select, 0.6);
 }
 
 #workspaces button.focused {
     color: @background;
     font-weight: 800;
-    background-color: @hc-blue;
+    background-color: @vibrant-border;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    color: @background;
+    background-color: @red-text;
     padding: 0 8px;
 }
 
 /* Window title */
 #window {
-    background: alpha(@background, 0.30);
+    background: alpha(@background, 0.90);
     border: 2px solid @vibrant-border;
-    border-radius: 6px;
-    color: @hc-blue;
+    border-radius: 0;
+    color: @foreground;
     font-weight: bold;
     padding: 0 14px;
 }
@@ -78,21 +79,21 @@ tooltip label {
 #battery,
 #pulseaudio,
 #clock {
-    background: alpha(@background, 0.30);
+    background: alpha(@background, 0.90);
     border: 2px solid @vibrant-border;
-    border-radius: 6px;
+    border-radius: 0;
     color: @foreground;
     padding: 0 12px;
     font-weight: 600;
 }
 
 #mode {
-    background: alpha(@red, 0.85);
+    background: @red-text;
     color: @background;
     font-weight: 800;
     padding: 0 16px;
     border: 2px solid @background;
-    border-radius: 6px;
+    border-radius: 0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -164,7 +165,7 @@ tooltip label {
 
 @keyframes blink {
     to {
-        background-color: @red;
+        background-color: @red-text;
         color: @background;
     }
 }

@@ -38,6 +38,9 @@ libnotify
 # --- Terminale ---
 kitty
 
+# --- SSH agent (ssh-agent.socket) ---
+openssh-clients
+
 # --- Screenshot ---
 grim
 slurp

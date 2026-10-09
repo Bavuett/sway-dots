@@ -40,13 +40,20 @@ fi
 # ── 4. Make helper scripts executable ─────────────────────
 chmod +x "$HOME"/.config/sway/scripts/*.sh
 
-# ── 5. Create XDG user directories ───────────────────────────
+# ── 5. SSH agent (systemd user socket) ───────────────────────
+if command -v systemctl >/dev/null 2>&1; then
+  systemctl --user enable ssh-agent.socket >/dev/null 2>&1 \
+    && echo "==> ssh-agent.socket enabled" \
+    || echo "  (could not enable ssh-agent.socket)"
+fi
+
+# ── 6. Create XDG user directories ───────────────────────────
 if command -v xdg-user-dirs-update >/dev/null 2>&1; then
   xdg-user-dirs-update
   echo "==> XDG user directories updated"
 fi
 
-# ── 6. Font cache ─────────────────────────────────────────────
+# ── 7. Font cache ─────────────────────────────────────────────
 if command -v fc-cache >/dev/null 2>&1; then
   fc-cache -fv >/dev/null 2>&1
   echo "==> Font cache refreshed"
@@ -56,6 +63,7 @@ echo ""
 echo "✓ Done. Backups (if any): $BACKUP_DIR"
 echo ""
 echo "NOTE: log out and back in so ~/.config/environment.d is applied."
+echo "TIP:  add 'AddKeysToAgent yes' to ~/.ssh/config so keys are loaded on first use."
 echo "      Inside sway, Super+Shift+C reloads the config."
 echo "NOTE: Install dependencies first with:"
 echo "  See dependencies.txt for instructions."

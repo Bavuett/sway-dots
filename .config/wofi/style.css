@@ -1,28 +1,27 @@
-/* Wofi spring pastel style */
+/* Wofi — Pastel Pink Flower (dark rose, from the Zed theme) */
 
 window {
     margin: 0;
-    border: 2px solid #f5b8c6;
+    border: 2px solid #f697aa;
     border-radius: 12px;
-    background-color: rgba(255, 247, 243, 0.72);
+    background-color: rgba(110, 58, 71, 0.96);
     font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
-    color: #3d2f47;
+    color: #faf1ef;
 }
 
 #input {
     margin: 8px;
-    border: 1px solid rgba(245, 184, 198, 0.65);
+    border: 1px solid #a35b6a;
     border-radius: 8px;
     padding: 8px 12px;
-    color: #6b5b73;
-    background-color: rgba(247, 217, 229, 0.6);
+    color: #faf1ef;
+    background-color: #8c4e5b;
     outline: none;
 }
 
 #input:focus {
-    border-color: #f5b8c6;
-    background-color: rgba(247, 217, 229, 0.85);
+    border-color: #f697aa;
 }
 
 #scroll {
@@ -40,7 +39,7 @@ window {
 }
 
 #text {
-    color: #3d2f47;
+    color: #faf1ef;
     padding: 2px 8px;
 }
 
@@ -51,12 +50,12 @@ window {
 }
 
 #entry:selected {
-    background-color: rgba(245, 184, 198, 0.38);
-    border-left: 3px solid #f5b8c6;
+    background-color: #8c4e5b;
+    border-left: 3px solid #f697aa;
 }
 
 #entry:selected #text {
-    color: #9e3f5a;  /* pink-text: contrasto >4.5:1 sul bg semitrasparente */
+    color: #f6af97;
     font-weight: bold;
 }
 
