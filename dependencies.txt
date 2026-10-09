@@ -37,6 +37,7 @@ libnotify
 
 # --- Terminale ---
 kitty
+tmux
 
 # --- SSH agent (ssh-agent.socket) ---
 openssh-clients

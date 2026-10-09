@@ -43,6 +43,7 @@ Dark rose palette inspired by the Zed theme *Pastel Pink Flower* and the gaura-f
 │   │   └── scripts/    # Screenshot + cheat sheet helpers
 │   ├── swaylock/       # Lockscreen config
 │   ├── kitty/          # Kitty terminal config
+│   ├── tmux/           # tmux config (Alt shortcuts, two-line status bar)
 │   ├── nvim/           # Neovim config (lazy.nvim + plugins)
 │   ├── waybar/         # Status bar config and style
 │   ├── wofi/           # App launcher config and style
